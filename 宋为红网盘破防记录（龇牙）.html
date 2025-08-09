@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://fuckcloud-pe.mghost.site/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宋为红网盘破防记录（龇牙）</title>
+    <link rel="icon" href="https://fuckcloud-pe.mghost.site/91.jpg" type="image/x-icon">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #e74c3c;
+            --accent-color: #f1c40f;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #fff;
+            --border-color: #ddd;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode {
+            --primary-color: #3da5ff;
+            --secondary-color: #ff6b6b;
+            --accent-color: #f39c12;
+            --text-color: #eee;
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --border-color: #333;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px 0;
+            position: relative;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px var(--shadow-color);
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInDown 1s;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            opacity: 0.9;
+            animation: fadeIn 1.5s;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 10;
+            backdrop-filter: blur(5px);
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .dark-mode .theme-toggle {
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 50px;
+            animation: fadeInUp 1s;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+            padding-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 3px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 6px 18px var(--shadow-color);
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+        }
+
+        .card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h3::before {
+            content: '⚠️';
+            font-size: 1.2em;
+        }
+
+        .evidence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .evidence-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px var(--shadow-color);
+            transition: all 0.3s ease;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+        }
+
+        .evidence-item:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 20px var(--shadow-color);
+        }
+
+        .evidence-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid var(--border-color);
+            transition: transform 0.3s;
+        }
+
+        .evidence-item:hover img {
+            transform: scale(1.02);
+        }
+
+        .evidence-caption {
+            padding: 15px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .conclusion {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, var(--card-bg), rgba(0,0,0,0.05));
+            border-radius: 10px;
+            margin-top: 50px;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .conclusion::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 70%);
+            animation: rotate 20s linear infinite;
+            z-index: -1;
+        }
+
+        .conclusion h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .conclusion p {
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 70px;
+            padding: 30px;
+            color: var(--text-color);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(231, 76, 60, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+            }
+        }
+
+        .highlight {
+            background-color: rgba(241, 196, 15, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .warning {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1.5px;
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--secondary-color);
+            border: 3px solid var(--card-bg);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+            text-align: right;
+        }
+
+        .right {
+            left: 50%;
+            text-align: left;
+        }
+
+        .left::after {
+            right: -10px;
+        }
+
+        .right::after {
+            left: -10px;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 3px 8px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .timeline-content h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 12px var(--shadow-color);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 99;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 21px;
+            }
+            
+            .left, .right {
+                left: 0;
+                text-align: left;
+            }
+            
+            .evidence-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <header>
+            <button class="theme-toggle" id="themeToggle">
+                <span id="themeIcon">☀️</span> 切换主题
+            </button>
+            <h1>Cloud-PE 宋为红网盘问题全曝光</h1>
+            <p class="subtitle">揭露虚假宣传、造谣诽谤、违反开源协议等多项不当行为</p>
+        </header>
+
+        <section style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+            <h2>6分钟从山东到北京报警事件</h2>
+            <div class="card">
+                <h3>6分钟从山东到北京报警（龇牙）</h3>
+                <p>宋为红网盘破防声称已报警<span class="highlight warning">"于是宋为红网盘6分钟从山东到北京"</span>你们是如何做到6分钟从山东到北京报警的（龇牙）。</p>
+                <p>招笑行为解析：宋为红网盘居然真的等了6分钟后才发的照片，只是为了模仿去公安局的路程（龇牙）</p>
+                
+                <div class="evidence-grid">
+                    <div class="evidence-item pulse">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/9.png" alt="QQ群宋为红网盘声称报警截图" style="cursor: zoom-in;">
+                        <div class="evidence-caption">LowIQ也不知道找自己地区的找个北京的招笑（龇牙）</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/8.png" alt="北京公安局图片实锤" style="cursor: zoom-in;">
+                        <div class="evidence-caption">经查证，宋为红网盘使用的"速度证明"图片实际上是盗用北京公安局的图片</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+            <h2>造谣诽谤：czk云盘跑路谣言</h2>
+            <div class="card">
+                <h3>恶意攻击竞争对手</h3>
+                <p>宋为红网盘再QQ群散布<span class="highlight warning">"czk云盘即将跑路"</span>的不实信息，试图误导用户，破坏竞争对手声誉。</p>
+                <p>这种行为不仅违反商业道德，也可能构成商业诽谤，需要承担法律责任。以下是他们散布谣言的部分证据：</p>
+                
+                <div class="evidence-grid">
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/11.png" alt="造谣证据1" style="cursor: zoom-in;">
+                        <div class="evidence-caption">造谣截图1：无根据宣称czk即将跑路</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/12.png" alt="造谣证据2" style="cursor: zoom-in;">
+                        <div class="evidence-caption">造谣截图2：继续散布不实信息</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/13.png" alt="造谣证据3" style="cursor: zoom-in;">
+                        <div class="evidence-caption">造谣截图3：恶意引导用户对CZKVPS产生怀疑</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/14.png" alt="造谣证据4" style="cursor: zoom-in;">
+                        <div class="evidence-caption">造谣截图4：毫无根据的指控</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/15.png" alt="造谣证据5" style="cursor: zoom-in;">
+                        <div class="evidence-caption">造谣截图5：持续散布谣言</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/16.png" alt="造谣证据6" style="cursor: zoom-in;">
+                        <div class="evidence-caption">造谣截图6：试图制造恐慌</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/17.png" alt="造谣证据7" style="cursor: zoom-in;">
+                        <div class="evidence-caption">造谣截图7：长期恶意攻击竞争对手</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+            <h2>不当言论：嘲讽XIGUASecurity杀毒软件</h2>
+            <div class="card">
+                <h3>对安全软件的无端攻击</h3>
+                <p>宋为红网盘发布多篇<span class="highlight">"小作文"</span>嘲讽XIGUASecurity杀毒软件，贬低其专业性。</p>
+                <p>事实上，XIGUASecurity作为一款自制杀毒软件，其防护能力比不上专业的杀毒软件。宋为红网盘这种无端攻击行为，暴露了其缺乏专业素养和商业道德：</p>
+                
+                <div class="evidence-grid">
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/25.png" alt="嘲讽证据1" style="cursor: zoom-in;">
+                        <div class="evidence-caption">嘲讽截图1：对XIGUASecurity的无理贬低</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/21.png" alt="嘲讽证据2" style="cursor: zoom-in;">
+                        <div class="evidence-caption">嘲讽截图2：发布不实比较</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/26.png" alt="嘲讽证据3" style="cursor: zoom-in;">
+                        <div class="evidence-caption">嘲讽截图3：恶意评价专业软件</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/24.png" alt="嘲讽证据4" style="cursor: zoom-in;">
+                        <div class="evidence-caption">嘲讽截图4：缺乏专业依据的批评</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/23.png" alt="嘲讽证据5" style="cursor: zoom-in;">
+                        <div class="evidence-caption">嘲讽截图5：持续攻击行为</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/22.png" alt="嘲讽证据6" style="cursor: zoom-in;">
+                        <div class="evidence-caption">嘲讽截图6：毫无根据的指责</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/18.png" alt="嘲讽证据7" style="cursor: zoom-in;">
+                        <div class="evidence-caption">嘲讽截图7：恶意贬低竞争对手</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/19.png" alt="嘲讽证据8" style="cursor: zoom-in;">
+                        <div class="evidence-caption">嘲讽截图8：发布不专业评价</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/20.png" alt="嘲讽证据9" style="cursor: zoom-in;">
+                        <div class="evidence-caption">嘲讽截图9：持续攻击行为</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/31.jpg" alt="嘲讽证据10" style="cursor: zoom-in;">
+                        <div class="evidence-caption">嘲讽截图10：攻击证据</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+            <h2>违反开源协议</h2>
+            <div class="card">
+                <h3>不遵守开源规则</h3>
+                <p>宋为红网盘在使用开源项目时<span class="highlight warning">不遵守开源协议</span>，违反了开源社区的基本准则。</p>
+                <p>开源软件的使用应当遵守相应的许可证条款，而宋为红网盘的行为损害了开源生态的健康：</p>
+                
+                <div class="evidence-grid">
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/27.png" alt="违反开源协议证据1" style="cursor: zoom-in;">
+                        <div class="evidence-caption">违反开源协议证据1：不遵守许可证要求</div>
+                    </div>
+                    <div class="evidence-item">
+                        <img src="./宋为红网盘破防记录（龇牙）_files/28.png" alt="违反开源协议证据2" style="cursor: zoom-in;">
+                        <div class="evidence-caption">违反开源协议证据2：无视开源规则</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+            <h2>事件时间线</h2>
+            <div class="card">
+                <h3>真相还原：谁先挑起事端？</h3>
+                <p>宋为红网盘一直声称是我们先发起攻击，但事实完全相反。以下是事件发展的真实时间线：</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item left" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                        <div class="timeline-content">
+                            <h4>挑衅开始</h4>
+                            <p>宋为红网盘首先将XIGUASecurity的群聊昵称改为"我妈死了"，并多次嘲讽造谣czk云盘和XIGUASecurity</p>
+                            <div class="evidence-grid" style="grid-template-columns: 1fr 1fr; margin-top: 10px;">
+                                <div class="evidence-item">
+                                    <img src="./宋为红网盘破防记录（龇牙）_files/29.png" alt="挑衅证据1" style="cursor: zoom-in;">
+                                </div>
+                                <div class="evidence-item">
+                                    <img src="./宋为红网盘破防记录（龇牙）_files/30.png" alt="挑衅证据2" style="cursor: zoom-in;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item right" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                        <div class="timeline-content">
+                            <h4>可笑的小号事件</h4>
+                            <p>宋为红网盘想找我们的小号，其实我们根本就没安插小号，反倒你们却安插小号，真是招笑行为（龇牙）</p>
+                            <div class="evidence-item" style="margin-top: 10px;">
+                                <img src="./宋为红网盘破防记录（龇牙）_files/2.png" alt="小号证据" style="cursor: zoom-in;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item left" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                        <div class="timeline-content">
+                            <h4>被迫反击</h4>
+                            <p>在长期遭受攻击和侮辱后，我们才不得不进行反击</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                        <div class="timeline-content">
+                            <h4>求饶时刻</h4>
+                            <p>当遭到有力回击后，宋为红网盘开始求饶，显示出其虚伪本质</p>
+                            <div class="evidence-grid" style="grid-template-columns: 1fr 1fr 1fr; margin-top: 10px;">
+                                <div class="evidence-item">
+                                    <img src="./宋为红网盘破防记录（龇牙）_files/5.jpg" alt="求饶证据1" style="cursor: zoom-in;">
+                                </div>
+                                <div class="evidence-item">
+                                    <img src="./宋为红网盘破防记录（龇牙）_files/3.jpg" alt="求饶证据2" style="cursor: zoom-in;">
+                                </div>
+                                <div class="evidence-item">
+                                    <img src="./宋为红网盘破防记录（龇牙）_files/1.jpg" alt="求饶证据3" style="cursor: zoom-in;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="conclusion card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+            <h3>总结与呼吁</h3>
+            <p>通过以上全面证据可以清楚地看到，宋为红网盘存在<span class="highlight warning">虚假宣传、造谣诽谤竞争对手、无端攻击其他产品、违反开源协议、恶意挑衅</span>等多方面严重问题。</p>
+            <p>我们呼吁：</p>
+            <p>1. 广大网民理性看待各类网络服务，不要轻信不实宣传</p>
+            <p>2. 相关平台能够加强监管，维护健康的网络环境</p>
+            <p>3. 受害者通过合法途径维护自身权益</p>
+            <p>网络空间不是法外之地，任何不当行为都应承担相应责任。</p>
+        </div>
+
+        <footer>
+            <p>本页面仅用于展示宋为红网盘的LowIQ发言，所有截图均来自网络公开渠道</p>
+            <p>最后更新时间: <span id="updateDate">2025年8月9日</span> | 追求真相，还原事实</p>
+        </footer>
+    </div>
+
+    <div class="back-to-top" id="backToTop">↑</div>
+
+    <script>
+        // 主题切换功能
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const body = document.body;
+        
+        // 检查本地存储中的主题偏好
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+            themeIcon.textContent = '☀️';
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            themeIcon.textContent = isDark ? '☀️' : '🌙';
+        });
+        
+        // 设置更新时间
+        document.getElementById('updateDate').textContent = new Date().toLocaleDateString('zh-CN', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        // 滚动动画
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('section, .conclusion, .timeline-item').forEach(element => {
+            element.style.opacity = 0;
+            element.style.transform = 'translateY(30px)';
+            element.style.transition = 'opacity 0.6s, transform 0.6s';
+            observer.observe(element);
+        });
+        
+        // 图片点击放大
+        document.querySelectorAll('.evidence-item img').forEach(img => {
+            img.style.cursor = 'zoom-in';
+            img.addEventListener('click', function() {
+                const overlay = document.createElement('div');
+                overlay.style.position = 'fixed';
+                overlay.style.top = '0';
+                overlay.style.left = '0';
+                overlay.style.width = '100%';
+                overlay.style.height = '100%';
+                overlay.style.backgroundColor = 'rgba(0,0,0,0.9)';
+                overlay.style.display = 'flex';
+                overlay.style.justifyContent = 'center';
+                overlay.style.alignItems = 'center';
+                overlay.style.zIndex = '1000';
+                overlay.style.cursor = 'zoom-out';
+                overlay.style.flexDirection = 'column';
+                
+                const enlargedImg = document.createElement('img');
+                enlargedImg.src = this.src;
+                enlargedImg.style.maxWidth = '90%';
+                enlargedImg.style.maxHeight = '80%';
+                enlargedImg.style.objectFit = 'contain';
+                enlargedImg.style.borderRadius = '8px';
+                
+                const caption = document.createElement('div');
+                caption.textContent = this.parentElement.querySelector('.evidence-caption').textContent;
+                caption.style.color = 'white';
+                caption.style.marginTop = '15px';
+                caption.style.maxWidth = '80%';
+                caption.style.textAlign = 'center';
+                
+                overlay.appendChild(enlargedImg);
+                overlay.appendChild(caption);
+                document.body.appendChild(overlay);
+                
+                overlay.addEventListener('click', function() {
+                    document.body.removeChild(overlay);
+                });
+            });
+        });
+        
+        // 返回顶部按钮
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 预加载图片
+        const imageUrls = [
+            'https://fuckcloud-pe.mghost.site/9.png',
+            'https://fuckcloud-pe.mghost.site/8.png',
+            'https://fuckcloud-pe.mghost.site/11.png',
+            'https://fuckcloud-pe.mghost.site/12.png',
+            'https://fuckcloud-pe.mghost.site/13.png',
+            'https://fuckcloud-pe.mghost.site/14.png',
+            'https://fuckcloud-pe.mghost.site/15.png',
+            'https://fuckcloud-pe.mghost.site/16.png',
+            'https://fuckcloud-pe.mghost.site/17.png',
+            'https://fuckcloud-pe.mghost.site/25.png',
+            'https://fuckcloud-pe.mghost.site/21.png',
+            'https://fuckcloud-pe.mghost.site/26.png',
+            'https://fuckcloud-pe.mghost.site/24.png',
+            'https://fuckcloud-pe.mghost.site/23.png',
+            'https://fuckcloud-pe.mghost.site/22.png',
+            'https://fuckcloud-pe.mghost.site/18.png',
+            'https://fuckcloud-pe.mghost.site/19.png',
+            'https://fuckcloud-pe.mghost.site/20.png',
+            'https://fuckcloud-pe.mghost.site/31.jpg',
+            'https://fuckcloud-pe.mghost.site/27.png',
+            'https://fuckcloud-pe.mghost.site/28.png',
+            'https://fuckcloud-pe.mghost.site/29.png',
+            'https://fuckcloud-pe.mghost.site/30.png',
+            'https://fuckcloud-pe.mghost.site/2.png',
+            'https://fuckcloud-pe.mghost.site/5.jpg',
+            'https://fuckcloud-pe.mghost.site/3.jpg',
+            'https://fuckcloud-pe.mghost.site/1.jpg'
+        ];
+        
+        imageUrls.forEach(url => {
+            const img = new Image();
+            img.src = url;
+        });
+    </script>
+
+</body><div class="xl-chrome-ext-bar_4DB361DE-01F7-4376-B494-639E489D19ED" id="xl_chrome_ext_4DB361DE-01F7-4376-B494-639E489D19ED" data-v-app="" style="display: block;"><div class=""><div id="xl_chrome_ext_video_tag_wrapper_4DB361DE-01F7-4376-B494-639E489D19ED" config="[object Object]" uiversion="v2" exception="false" latestvideosrc="" isshowvideotag="false" isshowdownloadbar="true" isshowcloudaddbar="false"><div class="_video_op_wrapper_96mx8_1" config="[object Object]" uiversion="v2" style="display: none;"><ul class="_video_op_list_96mx8_17"><li class="_op_item_96mx8_39 _download_96mx8_45"><span class="_op_icon_96mx8_25"></span><span class="_op_text_96mx8_31">下载</span></li><li class="_op_item_96mx8_39 _screen_96mx8_51"><span class="_op_icon_96mx8_25"></span><span class="_op_text_96mx8_31">投屏</span></li></ul></div></div><div class="badge_wrapper_4DB361DE-01F7-4376-B494-639E489D19ED _badge_wrapper_eor63_1" id="badge_wrapper_4DB361DE-01F7-4376-B494-639E489D19ED"><div class="_logo_eor63_20"></div><span class="_line_eor63_27"></span><div class="_text_wrapper_eor63_33"><span class="_download_icon_eor63_39"></span><span class="_text_eor63_33">高速下载</span></div></div><!----><!----><!----><!----><div class="_container_wq4mj_4"><!----></div></div></div></html>
